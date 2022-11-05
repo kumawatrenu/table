@@ -1,0 +1,111 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing:border-box; 
+}
+
+body{
+    background-color: gray;
+    padding: 0 10px;
+}
+
+.container{
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+    margin: 15px auto;
+    padding: 35px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.125); 
+}
+
+.container .title
+{
+ font-size: 24px;
+ font-weight: 500;
+ margin-bottom: 0px;
+ color: black;
+ text-align: center;
+}
+
+.container .form
+{
+    width: 100%;
+} 
+
+.container .form .input_field
+{
+ margin-bottom: 20px;
+ display: flexbox;
+ align-items: center;
+} 
+
+.container .form .input_field label{
+    width: 100%;
+    margin-right: 5px;
+    font-size: 14px;
+} 
+
+.container .form .input_field .input
+{
+  border: 2px solid black;
+  width: 100%;
+  outline: none;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+} 
+
+  .container .form .input_field .selectbox
+{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    border: 1px solid black;
+    appearance: none;
+    border-radius: 3px;
+    outline: none;
+}  
+
+ /* .container .form .input_field .selectbox::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 8px solid black;
+    border-color: red green pink black;
+}  */
+
+ .container .form .input_field .btn
+{
+width: 15%;
+padding: 5px 10px;
+font-size: 15px;
+border: 0;
+background: black;
+color: white;
+cursor: pointer;
+border-radius: 10px;
+outline: none;
+}
+
+.container .form .input_field:last-child
+{
+margin-bottom: 0;
+} 
+
+ @media (max-width:420px)
+{
+    .container .form .input_field
+    {
+     flex-direction: column;
+     align-items: flex-start;
+    }  
+    .container .form .input_field label
+    {
+        margin-bottom: 5px;
+    }
+    
+} 
